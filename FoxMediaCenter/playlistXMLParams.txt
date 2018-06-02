@@ -1,0 +1,14 @@
+
+
+// playlist XML params
+
+<CurrentFile>
+<CurrentPos>
+<PlayListEntry> array
+	<FullPath>
+	<Name>
+</PlayListEntry>
+
+<RandomPlayList> TRUE, FALSE
+<RandomEachTime> TRUE, FALSE
+<RandomDirPath> array

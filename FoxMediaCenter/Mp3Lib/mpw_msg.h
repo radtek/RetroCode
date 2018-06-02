@@ -1,0 +1,11 @@
+#ifndef MPW_MESSAGES_H
+#define MPW_MESSAGES_H
+
+#define SCROLL_POS 24344
+#define SEEK_ACK   24347
+#define WM_THREADEND    0xDDDD
+#define WM_CMDLINEFILE  0xDDDE
+#define SCROLL_ADJ 8
+#define MYWM_NOTIFYICON 0xDDDF
+
+#endif

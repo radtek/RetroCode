@@ -1,0 +1,259 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZipArchive - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP276.tmp" with contents
+[
+/nologo /MT /W3 /GR /GX /O2 /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /D "ZLIB_DLL" /D "ZIP_ARCHIVE_MFC_PROJ" /Fp"Release/ZipArchive.pch" /YX"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\adler32.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\compress.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\crc32.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\deflate.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\gvmat32c.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\infblock.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\infcodes.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\inffast.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\inflate.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\inftrees.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\infutil.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\maketree.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\trees.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\uncompr.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\zlib\zutil.c"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipArchive.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipAutoBuffer.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipCentralDir.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipCollections.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipCompatibility.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipException.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipFile.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipFileHeader.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipInternalInfo.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipMemFile.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipPathComponent.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipPlatform.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipPlatformComm.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Zip\ZipStorage.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP276.tmp" 
+Creating temporary file "C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP277.tmp" with contents
+[
+/nologo /out:"Release\ZipArchive.lib" 
+".\Release\adler32.obj"
+".\Release\compress.obj"
+".\Release\crc32.obj"
+".\Release\deflate.obj"
+".\Release\gvmat32c.obj"
+".\Release\infblock.obj"
+".\Release\infcodes.obj"
+".\Release\inffast.obj"
+".\Release\inflate.obj"
+".\Release\inftrees.obj"
+".\Release\infutil.obj"
+".\Release\maketree.obj"
+".\Release\trees.obj"
+".\Release\uncompr.obj"
+".\Release\zutil.obj"
+".\Release\StdAfx.obj"
+".\Release\ZipArchive.obj"
+".\Release\ZipAutoBuffer.obj"
+".\Release\ZipCentralDir.obj"
+".\Release\ZipCollections.obj"
+".\Release\ZipCompatibility.obj"
+".\Release\ZipException.obj"
+".\Release\ZipFile.obj"
+".\Release\ZipFileHeader.obj"
+".\Release\ZipInternalInfo.obj"
+".\Release\ZipMemFile.obj"
+".\Release\ZipPathComponent.obj"
+".\Release\ZipPlatform.obj"
+".\Release\ZipPlatformComm.obj"
+".\Release\ZipStorage.obj"
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP277.tmp"
+<h3>Output Window</h3>
+Compiling...
+adler32.c
+compress.c
+crc32.c
+deflate.c
+gvmat32c.c
+infblock.c
+infcodes.c
+inffast.c
+inflate.c
+inftrees.c
+infutil.c
+maketree.c
+trees.c
+uncompr.c
+zutil.c
+ZipArchive.cpp
+ZipAutoBuffer.cpp
+ZipCentralDir.cpp
+ZipCollections.cpp
+ZipCompatibility.cpp
+ZipException.cpp
+ZipFile.cpp
+ZipFileHeader.cpp
+ZipInternalInfo.cpp
+ZipMemFile.cpp
+ZipPathComponent.cpp
+ZipPlatform.cpp
+ZipPlatformComm.cpp
+ZipStorage.cpp
+Creating library...
+<h3>
+--------------------Configuration: SteveMediaCenter - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP278.tmp" with contents
+[
+/nologo /MT /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SteveMediaCenter.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Authorizedlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\BASE64CODER.CPP"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Blowfish\blowfish.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\ChildView.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\CMyCommandLineInfo.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\FileAssociationDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\helpers.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Httpsock.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Job.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Jobmanager.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MainFrm.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\ManagePlayListDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MP3Info.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Msgsockwndhttp.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Msgsockwndpost.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyBitMapButton.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyButton.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyDirectXPlayer.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyIEWnd.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyListBox.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyMediaPlayer.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyStatic.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\MyTreeCtrl.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\NewFileTypeDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\NewPlayListNameDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\NewRandomPlaylistDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\PINGJOB.CPP"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Pingjobmanager.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\Sockets\Pingsocket.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\PlayListManager.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\SelectSkinDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\SettingsDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\SteveMediaCenter.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\TimedShutdownDlg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\VolumeControl.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\webbrowser2.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP278.tmp" 
+Creating temporary file "C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP279.tmp" with contents
+[
+/nologo /MT /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /Fp"Release/SteveMediaCenter.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\FoxMediaCenter\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP279.tmp" 
+Creating temporary file "C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP27A.tmp" with contents
+[
+winmm.lib strmiids.lib /nologo /subsystem:windows /incremental:no /pdb:"Release/FoxMediaCenter.pdb" /machine:I386 /out:"Release/FoxMediaCenter.exe" 
+".\Release\Authorizedlg.obj"
+".\Release\BASE64CODER.OBJ"
+".\Release\blowfish.obj"
+".\Release\ChildView.obj"
+".\Release\CMyCommandLineInfo.obj"
+".\Release\FileAssociationDlg.obj"
+".\Release\helpers.obj"
+".\Release\Httpsock.obj"
+".\Release\Job.obj"
+".\Release\Jobmanager.obj"
+".\Release\MainFrm.obj"
+".\Release\ManagePlayListDlg.obj"
+".\Release\MP3Info.obj"
+".\Release\Msgsockwndhttp.obj"
+".\Release\Msgsockwndpost.obj"
+".\Release\MyBitMapButton.obj"
+".\Release\MyButton.obj"
+".\Release\MyDirectXPlayer.obj"
+".\Release\MyIEWnd.obj"
+".\Release\MyListBox.obj"
+".\Release\MyMediaPlayer.obj"
+".\Release\MyStatic.obj"
+".\Release\MyTreeCtrl.obj"
+".\Release\NewFileTypeDlg.obj"
+".\Release\NewPlayListNameDlg.obj"
+".\Release\NewRandomPlaylistDlg.obj"
+".\Release\PINGJOB.OBJ"
+".\Release\Pingjobmanager.obj"
+".\Release\Pingsocket.obj"
+".\Release\PlayListManager.obj"
+".\Release\SelectSkinDlg.obj"
+".\Release\SettingsDlg.obj"
+".\Release\StdAfx.obj"
+".\Release\SteveMediaCenter.obj"
+".\Release\TimedShutdownDlg.obj"
+".\Release\VolumeControl.obj"
+".\Release\webbrowser2.obj"
+".\Release\SteveMediaCenter.res"
+".\Zip\Release\ZipArchive.lib"
+]
+Creating command line "link.exe @C:\DOCUME~1\STEVEF~1.STE\LOCALS~1\Temp\RSP27A.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Objective Studio will automatically link with OSC61.lib
+Objective Toolkit will automatically link with OTP602.lib
+Objective Studio will automatically link with MVC61.lib
+Compiling...
+Authorizedlg.cpp
+BASE64CODER.CPP
+blowfish.cpp
+ChildView.cpp
+CMyCommandLineInfo.cpp
+FileAssociationDlg.cpp
+helpers.cpp
+Httpsock.cpp
+Job.cpp
+Jobmanager.cpp
+MainFrm.cpp
+ManagePlayListDlg.cpp
+MP3Info.cpp
+Msgsockwndhttp.cpp
+Msgsockwndpost.cpp
+MyBitMapButton.cpp
+MyButton.cpp
+MyDirectXPlayer.cpp
+MyIEWnd.cpp
+MyListBox.cpp
+Generating Code...
+Compiling...
+MyMediaPlayer.cpp
+MyStatic.cpp
+MyTreeCtrl.cpp
+NewFileTypeDlg.cpp
+NewPlayListNameDlg.cpp
+NewRandomPlaylistDlg.cpp
+PINGJOB.CPP
+Pingjobmanager.cpp
+Pingsocket.cpp
+PlayListManager.cpp
+SelectSkinDlg.cpp
+SettingsDlg.cpp
+SteveMediaCenter.cpp
+TimedShutdownDlg.cpp
+VolumeControl.cpp
+webbrowser2.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+FoxMediaCenter.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

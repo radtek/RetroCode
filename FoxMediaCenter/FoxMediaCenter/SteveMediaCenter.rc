@@ -1,0 +1,660 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 9, 1\r\n"
+    "#pragma code_page(1252)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SteveMediaCenter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""afxres.rc""         // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_TRAY_MENU MENU DISCARDABLE 
+BEGIN
+    POPUP "File"
+    BEGIN
+        MENUITEM "Show Play List",              ID_FILE_SHOWPLAYLIST
+        MENUITEM "Hide Play List",              ID_FILE_HIDEPLAYLIST
+        MENUITEM SEPARATOR
+        MENUITEM "Settings",                    ID_FILE_SETTINGS
+        MENUITEM "Activate Timed Shutdown...zzz", 
+                                                ID_FILE_ACTIVATETIMEDSHUTDOWN
+
+        MENUITEM "Select Skin",                 ID_FILE_SELECTSKIN
+        MENUITEM "Select Playlist",             ID_FILE_SELECTPLAYLIST
+        MENUITEM SEPARATOR
+        MENUITEM "Play",                        ID_FILE_PLAY
+        MENUITEM "Pause",                       ID_FILE_PAUSE
+        MENUITEM "Stop",                        ID_FILE_STOP
+        MENUITEM "Previous",                    ID_FILE_PREVIOUS
+        MENUITEM "Next",                        ID_FILE_NEXT
+        MENUITEM SEPARATOR
+        MENUITEM "Exit",                        ID_FILE_EXIT
+    END
+END
+
+IDR_MAINFRAME MENU DISCARDABLE 
+BEGIN
+    POPUP "file"
+    BEGIN
+        MENUITEM "exit",                        ID_FILE_EXIT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About SteveMediaCenter"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "FoxMediaCenter Version 1.0",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "Copyright (C) 2002",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_TIME_SHUTDOWN DIALOG DISCARDABLE  0, 0, 307, 156
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Timed Playback/Shutdown Setup"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT_MINUTES,25,57,61,14,ES_AUTOHSCROLL
+    CONTROL         "Lower volume slowly over time",IDC_LOWER_VOLUME,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,25,75,111,10
+    CONTROL         "Shutdown computer when times up or playlist ends",
+                    IDC_SHUTDOWN_COMPUTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,135,175,10
+    CONTROL         "Start Timer",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    248,7,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,248,
+                    24,50,14
+    LTEXT           "Select a time period or play to the end of the current playlist. You will then be able to listen to music from your playlist as you go to sleep. FoxMediaCenter will then turn down the volume and shut down your computer after completion.",
+                    IDC_STATIC_TEXT,5,5,205,35
+    LTEXT           "Minutes",IDC_STATIC4,90,62,26,8
+    LTEXT           "or...",IDC_OR,7,90,13,8
+    CONTROL         "Play till end of playlist/movie then stop\n and shutdown if selected.",
+                    IDC_SHUTDOWN_AFTER_LAST_SONG,"Button",BS_AUTORADIOBUTTON | 
+                    BS_MULTILINE | WS_GROUP | WS_TABSTOP,5,105,135,18
+    CONTROL         "Time in minutes to play these songs for",
+                    IDC_TIME_TO_PLAY_CHOICE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,5,45,137,10
+END
+
+IDD_SETTINGS DIALOG DISCARDABLE  0, 0, 302, 177
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FoxMediaCenter Settings"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Start when Windows starts.",IDC_AUTO_START_APP,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,5,102,10
+    CONTROL         "Show playlist when program is run.",IDC_SHOW_PLAYLIST,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,20,124,10
+    CONTROL         "Start playing last song played when program is run.",
+                    IDC_AUTO_START_LAST_SONG,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,35,175,10
+    CONTROL         "Enable (Shift) F1-F8 shortcut keys.",
+                    IDC_ENABLE_SHORTCUT_KEYS,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,50,124,10
+    CONTROL         "Pre-load playlist and player windows.\n(It uses more memory but they are displayed instantly).",
+                    IDC_PRELOAD_IE_WNDS,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | WS_TABSTOP,5,65,220,20
+    CONTROL         "Hide video window and just play sound.\n(if you want to listen to music video's and not have the player pop-up).",
+                    IDC_HIDE_PLAYER,"Button",BS_AUTOCHECKBOX | BS_MULTILINE | 
+                    WS_TABSTOP,5,90,255,20
+    CONTROL         "Repeat playlist after last song",IDC_REPEAT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,5,115,108,10
+    CONTROL         "File Associations",IDC_FILE_ASSOCIATION,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,5,155,86,14
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,245,7,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,245,
+                    24,50,14
+    CONTROL         "Append files to end of temp playlist. File are added from double clicks or web browser downloads.",
+                    IDC_APPEND_TO_TEMP,"Button",BS_AUTOCHECKBOX | 
+                    BS_MULTILINE | NOT WS_VISIBLE | WS_TABSTOP,5,130,245,20
+END
+
+IDD_SELECT_SKIN DIALOG DISCARDABLE  0, 0, 272, 193
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Select Skin"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,215,7,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,215,
+                    24,50,14
+    COMBOBOX        IDC_SELECT_SKIN,7,7,190,119,CBS_DROPDOWNLIST | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_MANAGE_PLAYLIST DIALOGEX 0, 0, 315, 302
+STYLE WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU | WS_THICKFRAME
+CAPTION "Manage My Playlists"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "Save All",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,258,7,
+                    50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,258,
+                    27,50,14
+    CONTROL         "New Playlist",IDC_NEW_NORMAL_PLAYLIST,"Button",
+                    BS_OWNERDRAW | WS_TABSTOP,258,46,50,14
+    CONTROL         "New Random",IDC_NEW_RANDOM,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,258,62,50,14
+    CONTROL         "Add Files",IDC_ADD_FILES,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,258,82,50,14
+    CONTROL         "Delete",IDC_DELETE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    258,102,50,14
+    CONTROL         "Tree1",IDC_TREE_PLAYLISTS,"SysTreeView32",
+                    TVS_HASBUTTONS | TVS_HASLINES | TVS_LINESATROOT | 
+                    TVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,0,0,245,300,
+                    WS_EX_ACCEPTFILES
+    CONTROL         "Play Selected",IDC_PLAY_SELECTED,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,258,127,50,14
+    CONTROL         "Rename List",IDC_RENAME_PLAYLIST,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,258,150,50,14
+END
+
+IDD_NEW_PLAYLIST_NAME DIALOG DISCARDABLE  0, 0, 225, 62
+STYLE DS_SYSMODAL | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Enter new playlist name"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,7,19,148,14,ES_AUTOHSCROLL
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,168,7,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,168,
+                    24,50,14
+    LTEXT           "Playlist Name",IDC_STATIC_TEXT,7,7,43,8
+END
+
+IDD_NEW_RANDOM_PLAYLIST DIALOG DISCARDABLE  0, 0, 332, 201
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Random Playlist"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_PLAYLIST_NAME,5,15,170,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_MAX_FILES,5,40,60,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIR_PATH,5,70,115,14,ES_AUTOHSCROLL
+    CONTROL         "Browse",IDC_BROWSE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    125,70,50,14
+    CONTROL         "Add Directory",IDC_ADD_DIR_TOLIST,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,180,70,50,14
+    EDITTEXT        IDC_FILE_EXT,5,100,50,14,ES_AUTOHSCROLL
+    CONTROL         "Add File Type",IDC_ADD_EXTENTION,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,125,100,50,14
+    CONTROL         "Choose random files each time this playlist is activated in player",
+                    IDC_MAKE_RANDOM_EACH_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,5,125,213,10
+    LISTBOX         IDC_LIST_DIRS,5,155,215,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST_EXTS,225,155,100,40,LBS_SORT | 
+                    LBS_NOINTEGRALHEIGHT | LBS_WANTKEYBOARDINPUT | 
+                    WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Create",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,275,5,
+                    50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,275,
+                    22,50,14
+    LTEXT           "Max number of files in playlist",IDC_STATIC2,5,30,92,8
+    LTEXT           "Directory containing files",IDC_STATIC3,5,60,78,8
+    LTEXT           "File extentions of media files to use",IDC_STATIC4,5,90,
+                    110,8
+    LTEXT           "eg. *.mp3",IDC_STATIC5,60,105,31,8
+    LTEXT           "Playlist Name",IDC_STATIC1,5,5,43,8
+    LTEXT           "Directories list",IDC_STATIC6,5,145,44,8
+    LTEXT           "Media types list",IDC_STATIC7,225,145,49,8
+    CONTROL         "Help",IDC_RANDOM_PLAYLIST_HELP,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,275,55,50,14
+END
+
+IDD_FILE_ASSOCIATION DIALOG DISCARDABLE  0, 0, 252, 241
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "File Association's"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "List1",IDC_LIST1,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | WS_BORDER | WS_TABSTOP,5,50,240,106
+    CONTROL         "New Type",IDC_NEW_TYPE_BUTTON,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,5,160,50,14
+    CONTROL         "Remove",IDC_REMOVE,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    60,160,50,14
+    CHECKBOX        "Mp3",IDC_MP3,5,195,30,10
+    CHECKBOX        "Ogg",IDC_OGG,5,210,29,10
+    CHECKBOX        "Mpg/Mpeg",IDC_MPG,5,225,51,10
+    CHECKBOX        "Divx/Avi",IDC_DIVX,65,195,43,10
+    CHECKBOX        "Quicktime mov",IDC_QUICKTIME,65,210,63,10
+    CHECKBOX        "Windows audio",IDC_WIN_AUDIO,130,195,65,10
+    CHECKBOX        "Windows video",IDC_WIN_VIDEO,130,210,65,10
+    CONTROL         "Done",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,195,5,50,
+                    14
+    LTEXT           "Check the file types you want then hit 'Done'. You can then double click these file types to load them.\nYour computer may be sluggish for a couple of seconds while Windows changes the file associations.",
+                    IDC_LIST_TEXT,5,10,175,35
+    LTEXT           "Known types add/remove from associated list",
+                    IDC_QUICK_TYPE_TEXT,5,180,144,8
+END
+
+IDD_NEW_ASSOC_FILE_TYPE DIALOG DISCARDABLE  0, 0, 247, 51
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New File Type"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_EDIT1,5,15,65,14,ES_AUTOHSCROLL
+    RADIOBUTTON     "Audio",IDC_AUDIO,85,20,34,10,WS_GROUP
+    RADIOBUTTON     "Video",IDC_VIDEO,120,20,34,10,WS_GROUP
+    CONTROL         "OK",IDOK,"Button",BS_OWNERDRAW | WS_TABSTOP,190,5,50,14
+    CONTROL         "Cancel",IDCANCEL,"Button",BS_OWNERDRAW | WS_TABSTOP,190,
+                    22,50,14
+    LTEXT           "Enter file type to add.",IDC_TEXT1,5,5,68,8
+    LTEXT           "eg .mp3",IDC_TEXT3,5,30,26,8
+    LTEXT           "Is this file type audio or a video.",IDC_TEXT2,85,5,100,
+                    8
+END
+
+IDD_MY_MESSAGE DIALOG DISCARDABLE  0, 0, 271, 79
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Fox Media Center Information..."
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,214,49,50,14
+    LTEXT           "Static",IDC_MSG,7,7,257,35
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "FoxMediaCenter\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "FoxMediaCenter\0"
+            VALUE "LegalCopyright", "Copyright (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "FoxMediaCenter.exe\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "FoxMediaCenter Application\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_TIME_SHUTDOWN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 300
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 149
+    END
+
+    IDD_SETTINGS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 295
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 170
+    END
+
+    IDD_SELECT_SKIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_MANAGE_PLAYLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 308
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 295
+    END
+
+    IDD_NEW_PLAYLIST_NAME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 218
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_NEW_RANDOM_PLAYLIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 325
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 194
+    END
+
+    IDD_FILE_ASSOCIATION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 234
+    END
+
+    IDD_NEW_ASSOC_FILE_TYPE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 240
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 44
+    END
+
+    IDD_MY_MESSAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 264
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 72
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "idr_main.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_DRAG                BITMAP  DISCARDABLE     "drag.bmp"
+IDB_BUTTON_UP           BITMAP  DISCARDABLE     "res\\button_u.bmp"
+IDB_BUTTON_DOWN         BITMAP  DISCARDABLE     "res\\button_d.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_HAND                CURSOR  DISCARDABLE     "res\\CURSOR1.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "FoxMediaCenter"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "FoxMediaCenter"
+    AFX_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (Australia) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENA)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_AUS
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_PROXY_AUTHORIZE DIALOG DISCARDABLE  0, 0, 228, 141
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Proxy server/firewall authorization"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_USERNAME,10,20,145,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD,10,50,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PASSWORD2,10,80,145,14,ES_PASSWORD | ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,171,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,171,24,50,14
+    LTEXT           "Username",IDC_STATIC,10,10,33,8
+    LTEXT           "Password",IDC_STATIC,10,40,32,8
+    LTEXT           "Your proxy server or firewall has asked for a username and password to access the internet. If you do not know these please ask your network administrator.",
+                    IDC_STATIC,15,106,200,25
+    LTEXT           "Confirm password",IDC_STATIC,10,70,56,8
+    GROUPBOX        "",IDC_STATIC,9,100,210,33
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_PROXY_AUTHORIZE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 134
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+#endif    // English (Australia) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE 9, 1
+#pragma code_page(1252)
+#endif //_WIN32
+#include "res\SteveMediaCenter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "afxres.rc"         // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

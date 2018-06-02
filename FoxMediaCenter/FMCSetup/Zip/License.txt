@@ -1,0 +1,65 @@
+/** \page pageLic Licensing information
+
+ZipArchive library - creation, modification and extraction of "zip" format archives <BR>
+Copyright (C) 2000 - 2001 Tadeusz Dracz.			<BR>
+E-Mail: 
+\htmlonly
+<a href="mailto:tdracz@artpol.com.pl"> tdracz@artpol.com.pl</a>
+\endhtmlonly
+
+This program is free software; you can redistribute it and/or
+modify it under the terms of the GNU General Public License
+as published by the Free Software Foundation; either version 2
+of the License, or (at your option) any later version.
+
+This library is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU
+General Public License for more details.
+ 
+You should have received a copy of the GNU General Public
+License along with this library; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+
+<HR>
+*************************************************************************
+An English version of the \ref pageGPL "GNU GPL" is in the gpl.txt file distributed with 
+this project. Translations to other languages are available at:
+\htmlonly
+<A HREF="http://www.gnu.org/copyleft/gpl.html" target="_blank">http://www.gnu.org/copyleft/gpl.html</A>
+\endhtmlonly
+
+Distributing ZipArchive under GNU GPL implies ZipArchive can only be used 
+with software that is licensed under conditions compliant with the GPL. 
+Embedding in proprietary software requires an alternative license.
+
+
+\subsection s1 Alternative license for use with proprietary software
+
+
+If you want to distribute software in a commercial context that incorporates ZipArchive
+and you do not want to meet these conditions, you need to have a commercial license. 
+The commercial license provides you with the same rights as the GNU GPL, but in 
+addition allows you to embed ZipArchive library in proprietary software without 
+affecting the copyright of this software. The license does not allow you to transfer these rights. 
+You won't need to purchase an additional license for the future versions of the library.
+<BR>
+The commercial license is available free of charge for freeware and shareware
+programs. If your program is distributed in a similar way to the one of the 
+above, the commercial license will be granted to you free of charge as well.
+<BR>
+There is a fee for the commercial license for using the library in the software 
+not falling into the mentioned categories. Please 
+\htmlonly
+<a href="mailto:tdracz@artpol.com.pl"> contact the author</a>
+\endhtmlonly
+ or visit 
+\htmlonly
+<A HREF="http://software.artpol.com.pl" target="_blank">the Artpol Software web site</A>
+\endhtmlonly
+ to find out more. 
+ <BR>
+ If you wish, the commercial license document can be sent to you signed by post.
+
+
+*/

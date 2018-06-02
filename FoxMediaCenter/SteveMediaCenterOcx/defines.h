@@ -1,0 +1,22 @@
+
+
+// defines.h
+
+#define		ID_PLAYLIST_CONTROL		4001
+#define		ID_MEDIA_CENTER_WND		4002
+#define		ID_MEDIA_PLAYER_64		4003
+#define		ID_MY_COMBO				4004	
+
+#define		WM_PLAY_SELECTED				(WM_USER + 1)
+#define		WM_PLAY_ALL						(WM_USER + 2)
+#define		WM_PLAY_ALL_FROM_SELECTED		(WM_USER + 3)
+#define		WM_GRAPHNOTIFY					(WM_USER + 4)
+#define		WM_SHOW_PLAYLIST_MANAGER		(WM_USER + 5)
+	
+
+#define		PLAYLIST_CLASSNAME				"167D2160-CB34-4e49-9925-2CAC020A3D8E"
+#define		APP_EXE_CLASSNAME				"81557EA5-E161-4fd5-9CAA-1DAC5BE73E25"
+
+#define		DEFAULT_INSTALL_PATH			"c:\\program files\\FoxMediaCenter"
+
+#define		DEFAULT_SKIN				"default"

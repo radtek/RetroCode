@@ -1,0 +1,34 @@
+
+
+	mediaTitle;
+	mediaLength;
+	mediaArtist;
+	mediaBitrate;
+	currentMediaPosition;
+	
+	hexBackGroundColor;
+	hexTextColor;
+	strJpgBKImageFilePath;
+	jpgBKOriginXPoint;
+	jpgBKOriginYPoint;
+	hexSelectTextColor;
+	hexSelectedBKColor;
+	nAlignText012;
+	
+	PlaySelected();
+	PlayAll();
+	Pause();
+	Stop();
+	ClearPlayList();
+	Mute();
+	LowerVolume();
+	IncreaseVolume();
+	AddToPlayList(String);
+	ShowOpenFileDialog();
+	ShowManagePlayList();
+
+	<!-- <SteveSizeX> -->
+	<!-- <SteveSizeY> -->
+
+	VolumeLeftOffset
+	VolumeRightOffset

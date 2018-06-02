@@ -1,0 +1,107 @@
+// SteveMediaCenterOcx.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (SteveMediaCenterOcx.tlb) that will become a resource in
+// SteveMediaCenterOcx.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(4336D4E7-3CE3-47EE-844D-BE1F0796AFB9), version(1.0),
+  helpfile("SteveMediaCenterOcx.hlp"),
+  helpstring("SteveMediaCenterOcx ActiveX Control module"),
+  control ]
+library STEVEMEDIACENTEROCXLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CSteveMediaCenterOcxCtrl
+
+	[ uuid(DC9A4388-F0A2-443E-B29B-A66A123A2DD1),
+	  helpstring("Dispatch interface for SteveMediaCenterOcx Control"), hidden ]
+	dispinterface _DSteveMediaCenterOcx
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CSteveMediaCenterOcxCtrl)
+			[id(1)] BSTR MediaTitle;
+			[id(2)] BSTR MediaLength;
+			[id(3)] BSTR MediaArtist;
+			[id(4)] BSTR MediaBitrate;
+			[id(5)] BSTR CurrentMediaPosition;
+			[id(6)] BSTR hexBackGroundColor;
+			[id(7)] BSTR hexTextColor;
+			[id(8)] BSTR jpgBKImageFilePath;
+			[id(9)] long jpgBKOriginXPoint;
+			[id(10)] long jpgBKOriginYPoint;
+			[id(11)] BSTR hexSelectTextColor;
+			[id(12)] BSTR hexSelectedBKColor;
+			[id(13)] short nAlignText012;
+			[id(14)] BSTR ScollingTextMsg;
+			[id(15)] short VolumeLeftOffset;
+			[id(16)] short VolumeRightOffset;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CSteveMediaCenterOcxCtrl)
+			[id(17)] boolean PlaySelected();
+			[id(18)] boolean Play();
+			[id(19)] boolean Pause();
+			[id(20)] boolean Stop();
+			[id(21)] void ClearPlayList();
+			[id(22)] void Mute();
+			[id(23)] void LowerVolume();
+			[id(24)] void IncreaseVolume();
+			[id(25)] void AddToPlayList(BSTR strFilePath);
+			[id(26)] void ShowOpenFileDialog();
+			[id(27)] void ShowManagePlayList();
+			[id(28)] void Previous();
+			[id(29)] void Next();
+			[id(30)] void ShowSelectSkin();
+			[id(31)] void Rewind();
+			[id(32)] void Forward();
+			[id(33)] void ShowPopUpMenu();
+			[id(34)] void ShowVolumeControl();
+			[id(35)] void ShowSeekControl();
+			[id(36)] boolean IsPlayListEmpty();
+			[id(37)] void SkinUpdate(BSTR strParams);
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CSteveMediaCenterOcxCtrl
+
+	[ uuid(E79C0265-B2CF-456F-B78F-6A7E3C7E6606),
+	  helpstring("Event interface for SteveMediaCenterOcx Control") ]
+	dispinterface _DSteveMediaCenterOcxEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CSteveMediaCenterOcxCtrl)
+			[id(1)] void ChangeCurrentMediaInfo();
+			[id(2)] void UpdatePlayPosition();
+			[id(3)] void UpdateScrollingText();
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CSteveMediaCenterOcxCtrl
+
+	[ uuid(9DA8A279-ECD6-4125-A253-422F9B1CBB1A),
+	  helpstring("SteveMediaCenterOcx Control"), control ]
+	coclass SteveMediaCenterOcx
+	{
+		[default] dispinterface _DSteveMediaCenterOcx;
+		[default, source] dispinterface _DSteveMediaCenterOcxEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};

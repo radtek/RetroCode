@@ -1,0 +1,62 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SteveMediaCenterOcx - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDED.tmp" with contents
+[
+/nologo /MT /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_WINDLL" /Fp"Release/SteveMediaCenterOcx.pch" /Yu"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\helpers.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\MyListCtrl.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\MyMessageWnd.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\MySeekSliderWnd.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\MySliderCtrl.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\SeekWnd.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\SteveMediaCenterOcx.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\SteveMediaCenterOcxCtl.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\SteveMediaCenterOcxPpg.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\VolumeControl.cpp"
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\VolumeWnd.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDED.tmp" 
+Creating temporary file "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDEE.tmp" with contents
+[
+/nologo /MT /W3 /GR /GX /O2 /D "WIN32" /D "NDEBUG" /D "_WINDOWS" /D "_MBCS" /D "_USRDLL" /D "_WINDLL" /Fp"Release/SteveMediaCenterOcx.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MYAPPDEV\STEVESPROGS\FOXMediaCenter Projects\SteveMediaCenterOcx\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDEE.tmp" 
+Creating temporary file "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDEF.tmp" with contents
+[
+winmm.lib /nologo /subsystem:windows /dll /incremental:no /pdb:"Release/SteveMediaCenterOcx.pdb" /machine:I386 /def:".\SteveMediaCenterOcx.def" /out:"Release/SteveMediaCenterOcx.ocx" /implib:"Release/SteveMediaCenterOcx.lib" 
+".\Release\helpers.obj"
+".\Release\MyListCtrl.obj"
+".\Release\MyMessageWnd.obj"
+".\Release\MySeekSliderWnd.obj"
+".\Release\MySliderCtrl.obj"
+".\Release\SeekWnd.obj"
+".\Release\StdAfx.obj"
+".\Release\SteveMediaCenterOcx.obj"
+".\Release\SteveMediaCenterOcxCtl.obj"
+".\Release\SteveMediaCenterOcxPpg.obj"
+".\Release\VolumeControl.obj"
+".\Release\VolumeWnd.obj"
+".\Release\SteveMediaCenterOcx.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDEF.tmp"
+Creating temporary file "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDF0.bat" with contents
+[
+@echo off
+regsvr32 /s /c ".\Release\SteveMediaCenterOcx.ocx"
+echo regsvr32 exec. time > ".\Release\regsvr32.trg"
+]
+Creating command line "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSPDF0.bat"
+Compiling...
+StdAfx.cpp
+cl.exe terminated at user request.
+
+</pre>
+</body>
+</html>

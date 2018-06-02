@@ -1,0 +1,141 @@
+/** \page pageHist Revision history
+
+
+\b 07.2001 
+
+<B> ver 1.6.5 </B>
+	
+<B> Features added: </B>
+
+	- added function CZipArchive::SetRootPath that allows more flexible path 
+	manipulations when using CZipArchive::AddNewFile and CZipArchive::ExtractFile
+	- ability to set the archive system compatibility to a value different
+	than the current system ID with the function CZipArchive::SetSystemCompatibility()
+
+<B>  Bugs fixed: </B>
+
+	- bug which caused not updating the time stamp of an extracted file
+	and an exception being thrown, if the file had the read-only attribute set
+	(thanks to Arnon Meydav)
+	- bugs in conversion of Unix attributes
+	- directories inside the archive are now recognized properly by Unix archivers
+	if the archive was created for Unix platform
+
+\b 06.2001 
+
+<B> ver 1.6.4 </B>
+	
+	- fixed errors that made impossible using CZipMemFile class and 
+	creation of the	archives in memory
+
+
+\b 05.2001 
+
+<B> ver 1.6.3 </B>
+	
+	- zlib library sources incorporated into ZipArchive library projects
+(eliminates most often link errors)
+
+\b 04.2001 
+
+
+<B> ver 1.6.2 </B>
+
+	- ZipPlatform::SetVolLabel() appends now a directory separator to the drive name (lack of it caused errors sometimes)
+	- added a simple protection against compiling MFC or STL version without copying the proper files first
+	- added several preprocessor directives for Borland compilers
+
+\b 03.2001 
+
+<B> ver 1.6.1 </B>
+
+<B> Features added: </B>
+
+	- non MFC dependent version (STL)
+	- porting to different platforms made easier
+	- possibility to read zip files created on other platforms than Windows
+		(correct interpretation of file/directory attributes)
+	- documentation generated (using 
+	\htmlonly
+	<A HREF="http://www.stack.nl/~dimitri/doxygen/" target="_blank">Doxygen </A> 
+	\endhtmlonly
+	)
+
+<B>  Changes: </B>
+
+	- LICENSING CHANGED
+	- overall tuning
+	- sample application updated
+
+<B> ver 1.5.1 </B>
+
+	- when the central directory was not located, the library throws CZipException::cdirNotFound,
+	which allows distinguish from other exceptions (useful when we want to keep prompting
+	the user to insert the last disk in a multi-disk spanning archive).
+	- the sample application updated to reflect the above feature
+
+
+\b 02.2001
+
+<B>  Features added:  </B>
+
+	- ability to reuse the archive after an exception thrown during extraction
+	- added progress control possibilities to CZipArchive::AddNewFile, CZipArchive::ExtractFile, CZipArchive::TestFile
+
+<B>  Changes: </B>
+
+	- CZipArchive::FindFile operation boosted ( thanks to Darin Warling)
+	- library name changed to ZipArchive
+
+<B>  Bugs fixed: </B>
+
+	- removed bug during extracting an encrypted file with 0 size
+	- fixed bug when extracting a file with an extra field in a local file header (CFileHeader::ReadLocal)
+
+\b 01.2001
+		- Disk numbering in a disk spanning archive begins now from PKBACK# 001 not PKBACK# 000
+		- Adding and extracting without a full path possible in CZipArchive::AddNewFile and CZipArchive::ExtractFile.
+		- Several minor changes and enhancements
+		- Changed names for several classes.
+
+\b 11.2000
+ 		- Added support for password encryption and decryption.
+			The encryption used in PKZIP was generously supplied by Roger
+			Schlafly.  
+		- Testing the archive made easier
+		- Unicode support added
+
+\b 08.2000
+		- Bugs fixed
+
+\b 06.2000
+\par
+		the code has been completely rewritten since the very beginning;
+		the main improvements are:
+		- multi-disk archive support
+		- creation of the disk spanning archives with the user-defined volume size
+		- ability to modify existing archives (add, delete files)
+		- modification self-extracting archives
+		- write buffer used for faster disk write operations 
+		- one class for zip and unzip functions
+		- fast adding, deleting and extracting files with a single function call
+ 
+\b 03.2000
+		- international characters in filenames inside archive are now
+			converted in a compatible way with other archiving programs (they are stored
+		converted to OEM inside archive).
+
+\b 01.2000
+\par
+		first version; it is just modified code from zip.c and unzip.c files
+			written by Gilles Vollant and distributed with zlib library; 
+			the modifications are as follows:
+		- added class' wrappers
+		- several bugs fixed
+		- several enhancements added
+		- MFC support added
+		- memory leaks eliminated when write error occurred
+		- automatically free used memory on destruction or exception
+		- modern error notification using exceptions
+
+*/

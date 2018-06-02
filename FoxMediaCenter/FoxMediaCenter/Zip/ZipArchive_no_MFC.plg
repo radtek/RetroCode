@@ -1,0 +1,61 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ZipArchive - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSP4C4.tmp" with contents
+[
+/nologo /MD /W4 /GX /O2 /D "NDEBUG" /D "_MBCS" /D "WIN32" /D "_WINDOWS" /D "ZLIB_DLL" /D "ZIP_ARCHIVE_STL_PROJ" /Fp"Release/ZipArchive_no_MFC.pch" /Yc"stdafx.h" /Fo"Release/" /Fd"Release/" /FD /c 
+"C:\MYAPPDEV\Zip\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSP4C4.tmp" 
+Creating temporary file "C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSP4C5.tmp" with contents
+[
+/nologo /out:"Release\ZipArchive_no_MFC.lib" 
+.\Release\adler32.obj
+.\Release\compress.obj
+.\Release\crc32.obj
+.\Release\deflate.obj
+.\Release\gvmat32c.obj
+.\Release\infblock.obj
+.\Release\infcodes.obj
+.\Release\inffast.obj
+.\Release\inflate.obj
+.\Release\inftrees.obj
+.\Release\infutil.obj
+.\Release\maketree.obj
+.\Release\trees.obj
+.\Release\uncompr.obj
+.\Release\zutil.obj
+.\Release\StdAfx.obj
+.\Release\ZipArchive.obj
+.\Release\ZipAutoBuffer.obj
+.\Release\ZipCentralDir.obj
+.\Release\ZipCollections.obj
+.\Release\ZipCompatibility.obj
+.\Release\ZipException.obj
+.\Release\ZipFile.obj
+.\Release\ZipFileHeader.obj
+.\Release\ZipInternalInfo.obj
+.\Release\ZipMemFile.obj
+.\Release\ZipPathComponent.obj
+.\Release\ZipPlatform.obj
+.\Release\ZipPlatformComm.obj
+.\Release\ZipStorage.obj
+]
+Creating command line "link.exe -lib @C:\DOCUME~1\STEVEF~1\LOCALS~1\Temp\RSP4C5.tmp"
+<h3>Output Window</h3>
+Compiling...
+StdAfx.cpp
+Creating library...
+
+
+
+<h3>Results</h3>
+ZipArchive_no_MFC.lib - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

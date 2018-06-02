@@ -1,0 +1,121 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<META http-equiv=Content-Type content="text/html; charset=unicode">
+<META content="MSHTML 6.00.2719.2200" name=GENERATOR>
+<SCRIPT ID=clientEventHandlersJS LANGUAGE=javascript>
+<!--
+function Previous()
+{
+	DSteveMediaPlayer1.Previous();
+}
+function Next()
+{
+	DSteveMediaPlayer1.Next();
+}
+function Play()
+{
+	DSteveMediaPlayer1.Play();
+}
+function Stop()
+{
+	DSteveMediaPlayer1.Stop();
+}
+function Pause()
+{
+	DSteveMediaPlayer1.Pause();
+}
+function FullScreen()
+{
+	DSteveMediaPlayer1.FullScreen();
+}
+function ShowPlayList()
+{
+	DSteveMediaPlayer1.ShowPlayList();
+}
+function Lower()
+{
+	DSteveMediaPlayer1.LowerVolume();
+}
+function Mute()
+{
+	DSteveMediaPlayer1.Mute();
+}
+function Higher()
+{
+	DSteveMediaPlayer1.IncreaseVolume();
+}
+function Rewind()
+{
+	DSteveMediaPlayer1.Rewind();
+}
+function Forward()
+{
+	DSteveMediaPlayer1.Forward();
+}
+function ShowVolume()
+{
+	DSteveMediaPlayer1.ShowVolumeControl();
+}
+function Seek()
+{
+	DSteveMediaPlayer1.ShowSeekControl();
+}
+
+function OnLoad()
+{
+	window_onresize();
+}
+function window_onresize() 
+{
+	DSteveMediaPlayer1.nBottomPos = 47;
+	DSteveMediaPlayer1.nRightPos = 25;
+	DSteveMediaPlayer1.ResizeMyControl(document.body.offsetWidth
+										,document.body.offsetHeight);
+}
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.0
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && document.getElementById) x=document.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+//-->
+</SCRIPT>
+<TITLE>SteveMediaCenter Player</TITLE>
+</HEAD>
+<BODY LANGUAGE=javascript onload="OnLoad();MM_preloadImages('Images/rplay1.jpg','Images/rstop1.jpg','Images/rpause1.jpg','Images/rforward1.jpg','Images/rrewind1.jpg','Images/reject1.jpg','Images/fullscreen1.jpg','Images/volume1.jpg','Images/seek1.jpg')" onresize="return window_onresize()" scroll="no" bgcolor="#000000">
+<OBJECT id=DSteveMediaPlayer1 
+style="LEFT: 0px; WIDTH: 353px; TOP: 0px; HEIGHT: 224px" 
+classid=clsid:1EB178E4-9FB1-428C-94B8-BA945BB7A8E3 VIEWASTEXT>
+    <PARAM NAME="_Version" VALUE="65536">
+    <PARAM NAME="_ExtentX" VALUE="9340">
+    <PARAM NAME="_ExtentY" VALUE="5927">
+    <PARAM NAME="_StockProps" VALUE="0">
+  </OBJECT>
+<center>
+  <table width="440" border="0" height="27" align="bottom" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td border="0" height="27" width="340" valign="left" align="left"> <img src="Images/leftend.jpg" width="20" height="27"><a href="javascript:FullScreen()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Fullscreen','','Images/fullscreen1.jpg',1)"><img name="Fullscreen" border="0" src="Images/fullscreen.jpg" width="80" height="27"></a><a href="javascript:Rewind()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Previous','','Images/rrewind1.jpg',1)"><img name="Previous" border="0" src="Images/rrewind.jpg" width="40" height="27"></a><a href="javascript:Play()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Play','','Images/rplay1.jpg',1)"><img name="Play" border="0" src="Images/rplay.jpg" width="40" height="27"></a><a href="javascript:Stop()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Stop','','Images/rstop1.jpg',1)"><img name="Stop" border="0" src="Images/rstop.jpg" width="40" height="27"></a><a href="javascript:Pause()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Pause','','Images/rpause1.jpg',1)"><img name="Pause" border="0" src="Images/rpause.jpg" width="40" height="27"></a><a href="javascript:Forward()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Next','','Images/rforward1.jpg',1)"><img name="Next" border="0" src="Images/rforward.jpg" width="40" height="27"></a><a href="javascript:ShowPlayList()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Playlists','','Images/reject1.jpg',1)"><img name="Playlists" border="0" src="Images/reject.jpg" width="40" height="27"></a></td>
+      <td border="0" height="27" width="80" align="left" valign="top"><a href="javascript:ShowVolume()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Volume','','Images/volume1.jpg',1)"><img name="Volume" border="0" src="Images/volume.jpg" width="80" height="14" align="top"></a><a href="javascript:Seek()" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Seek','','Images/seek1.jpg',1)"><img name="Seek" border="0" src="Images/seek.jpg" width="80" height="13" align="bottom"></a></td>
+      <td border="0" height="27" width="20" align="left" valign="top"><img src="Images/rightend.jpg" width="20" height="27" align="middle"></td>
+	 </tr> 
+  </table>   
+</center>
+
+</BODY>
+</HTML>

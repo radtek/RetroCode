@@ -1,0 +1,89 @@
+// SteveMediaPlayer.odl : type library source for ActiveX Control project.
+
+// This file will be processed by the Make Type Library (mktyplib) tool to
+// produce the type library (SteveMediaPlayer.tlb) that will become a resource in
+// SteveMediaPlayer.ocx.
+
+#include <olectl.h>
+#include <idispids.h>
+
+[ uuid(5A560E8F-CB40-4DC7-86C2-4DB31C7590F2), version(1.0),
+  helpfile("SteveMediaPlayer.hlp"),
+  helpstring("SteveMediaPlayer ActiveX Control module"),
+  control ]
+library STEVEMEDIAPLAYERLib
+{
+	importlib(STDOLE_TLB);
+	importlib(STDTYPE_TLB);
+
+	//  Primary dispatch interface for CSteveMediaPlayerCtrl
+
+	[ uuid(767946E1-E005-49A4-BB7A-22282B67D556),
+	  helpstring("Dispatch interface for SteveMediaPlayer Control"), hidden ]
+	dispinterface _DSteveMediaPlayer
+	{
+		properties:
+			// NOTE - ClassWizard will maintain property information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_PROP(CSteveMediaPlayerCtrl)
+			[id(1)] short nLeftPos;
+			[id(2)] short nTopPos;
+			[id(3)] short nRightPos;
+			[id(4)] short nBottomPos;
+			[id(5)] short VolumeLeftOffset;
+			[id(6)] short VolumeRightOffset;
+			//}}AFX_ODL_PROP
+
+		methods:
+			// NOTE - ClassWizard will maintain method information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_METHOD(CSteveMediaPlayerCtrl)
+			[id(7)] void ResizeMyControl(short nWidth, short nHeight);
+			[id(8)] void Previous();
+			[id(9)] void Next();
+			[id(10)] void Play();
+			[id(11)] void Stop();
+			[id(12)] void Pause();
+			[id(13)] boolean SetFilePath(BSTR strFilePath);
+			[id(14)] void LowerVolume();
+			[id(15)] void IncreaseVolume();
+			[id(16)] void ShowPlayList();
+			[id(17)] void Mute();
+			[id(18)] void FullScreen();
+			[id(19)] void Rewind();
+			[id(20)] void Forward();
+			[id(21)] void ShowVolumeControl();
+			[id(22)] void ShowSeekControl();
+			//}}AFX_ODL_METHOD
+	};
+
+	//  Event dispatch interface for CSteveMediaPlayerCtrl
+
+	[ uuid(369FD439-F992-4DC7-B2D4-D125457A1822),
+	  helpstring("Event interface for SteveMediaPlayer Control") ]
+	dispinterface _DSteveMediaPlayerEvents
+	{
+		properties:
+			//  Event interface has no properties
+
+		methods:
+			// NOTE - ClassWizard will maintain event information here.
+			//    Use extreme caution when editing this section.
+			//{{AFX_ODL_EVENT(CSteveMediaPlayerCtrl)
+			//}}AFX_ODL_EVENT
+	};
+
+	//  Class information for CSteveMediaPlayerCtrl
+
+	[ uuid(1EB178E4-9FB1-428C-94B8-BA945BB7A8E3),
+	  helpstring("SteveMediaPlayer Control"), control ]
+	coclass SteveMediaPlayer
+	{
+		[default] dispinterface _DSteveMediaPlayer;
+		[default, source] dispinterface _DSteveMediaPlayerEvents;
+	};
+
+
+	//{{AFX_APPEND_ODL}}
+	//}}AFX_APPEND_ODL}}
+};
