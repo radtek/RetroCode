@@ -1,0 +1,60 @@
+
+// Options dialog settings
+------------------------------
+
+// hide or close app on close click
+MyGetProfileInt("MinimizeOnClose",0) 
+
+// show or hide app on startup
+MyGetProfileInt("StartWhenWindowsStarts",0)
+
+// show or hide app on startup
+MyGetProfileInt("MinimizeOnStart",0)
+
+// empty passwords from clipboard when closed
+MyGetProfileInt("ClearClipOnClose",1)
+
+// empty passwords when screen saver running
+MyGetProfileInt("ClearPassOnScreensaver",1)
+
+// clear passwords on minimize to system tray
+MyGetProfileInt("ClearPassOnMinimize",0)
+
+// clear passwords after certain time period on minimize
+MyGetProfileInt("ClearPassOnMinimizeTimeMins",10)
+
+// popup password window when url menu clicked
+MyGetProfileInt("PopupOnWebMenu",1)
+
+// auto hide app when loading web site
+MyGetProfileInt("AutoHideAppWhenLoadURL",0)
+
+// auto unlock browser after time period
+MyGetProfileInt("AutoUnlockBrowser",1)
+
+// time period for auto unlock browser
+MyGetProfileInt("AutoUnlockBrowserTimeMins",5)
+
+// default password never expires
+MyGetProfileInt("DefaultPassNeverExpires",0)
+
+// default password expires in x days when creating new entry
+MyGetProfileInt("DefaultPassExpireInDays",30)
+
+// non options dialog settings
+------------------------------
+
+// don't show browser lock down warning a second time
+MyWriteProfileInt("DontShowLockDownWarning",1);
+
+// disable BHO's
+HKEY_CURRENT_USER\Software\Microsoft\Internet Explorer\Main\
+	Enable Browser Extensions = yes or no
+
+// security level
+HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones\3
+	MinLevel = 0x00011000
+
+// default BHO enabled regsitry settings
+MyGetProfileString("CurrentBHOEnabled","")
+	

@@ -1,0 +1,51 @@
+===============================================================================================
+TODO
+===============================================================================================
+
+5-10-2005
+
+Suggestions
+-----------
+- No ability to include a 2nd password
+- No ability to show Credit Card start date
+- allow user to create custom fields
+
+
+V 1.01
+- Import passwords from another file.
+- add option to clear all passwords from Internet Explorers cache
+- add extra fields in the next version and provide XML methods to customize the information.
+- add credit card print
+- fix CPicture/CImage dependency on gdi+
+- installer should offer some options to configure
+- offer quick launch icon
+- look at host file for re-directed IP addresses
+- lock password safe on windows screensaver activation
+- select icon to use with entries
+- import passwords from file, ask to overwrite
+
+V 1.02
+- network share for multi users. Allow shared password lists based on logons.
+- extra security for system hook setting etc, should be encrypted
+- generate password phrases, like 'thiscoolniceicon'
+- get print to wrap columns if text to much to fit on page
+- load icons from user selected locations
+- skins
+? Next app...
+- allow easy switch to logon XP with username, password and visa versa
+- detect key loggers (system hooks)	
+	+ send key message to hidden window every second to see if key hook has been disabled.
+	+ Do not pass on chain message to disable other hooks while security is needed.
+	+ check for host entry for this URL
+
+===============================================================================================
+BUGS
+===============================================================================================
+- startup flickers when minimize to tray ... (ProcessShellCommand(cmdInfo))
+- screen saver check does not work
+- check onsize re-calculating all scroll sizes
+
+===============================================================================================
+MARKETING
+===============================================================================================
+- email hardware manufactorers like DSL modems, computers for OEM deals.
