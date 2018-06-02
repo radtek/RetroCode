@@ -1,0 +1,10 @@
+
+=================
+TODO
+=================
+
+2-8-2005
+
+- get setup to write in Windows startup incase a reboot occurs and to show browser bar
+- test for windows exit all apps and then kill thread...
+

@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "ReadToMeSetup", "ReadToMeSetup.vcproj", "{5F836D25-EBA7-4DF4-A0D7-D0BA375382F0}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {DF9ABCD4-9DEB-47B4-ABDB-3D5D27C3E7B1}
+		SccProjectUniqueName1 = ReadToMeSetup.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{5F836D25-EBA7-4DF4-A0D7-D0BA375382F0}.Debug.ActiveCfg = Debug|Win32
+		{5F836D25-EBA7-4DF4-A0D7-D0BA375382F0}.Debug.Build.0 = Debug|Win32
+		{5F836D25-EBA7-4DF4-A0D7-D0BA375382F0}.Release.ActiveCfg = Release|Win32
+		{5F836D25-EBA7-4DF4-A0D7-D0BA375382F0}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

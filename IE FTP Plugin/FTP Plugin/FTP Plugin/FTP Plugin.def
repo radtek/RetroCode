@@ -1,0 +1,9 @@
+; FTP Plugin.def : Declares the module parameters.
+
+LIBRARY      "FTP Plugin.DLL"
+
+EXPORTS
+	DllCanUnloadNow		PRIVATE
+	DllGetClassObject	PRIVATE
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE

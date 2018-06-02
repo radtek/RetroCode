@@ -1,0 +1,11 @@
+HKCR
+{
+	NoRemove AppID
+	{
+		'%APPID%' = s 'FTPPlugin'
+		'FTP Plugin.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}
+}

@@ -1,0 +1,27 @@
+HKCR
+{
+	FTPPlugin.IEFTPPlugin.1 = s 'IE FTP Plugin'
+	{
+		CLSID = s '{DF9A8ABF-A30C-4240-9BFE-E03E7EADC816}'
+	}
+	FTPPlugin.IEFTPPlugin = s 'IE FTP Plugin'
+	{
+		CLSID = s '{DF9A8ABF-A30C-4240-9BFE-E03E7EADC816}'
+		CurVer = s 'FTPPlugin.IEFTPPlugin.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {DF9A8ABF-A30C-4240-9BFE-E03E7EADC816} = s 'IE FTP Plugin'
+		{
+			ProgID = s 'FTPPlugin.IEFTPPlugin.1'
+			VersionIndependentProgID = s 'FTPPlugin.IEFTPPlugin'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			val AppID = s '%APPID%'
+			'TypeLib' = s '{C11D7BDB-D9D0-45C4-BA83-A23DABDA242D}'
+		}
+	}
+}

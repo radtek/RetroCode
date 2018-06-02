@@ -1,0 +1,49 @@
+// FTPPlugin.idl : IDL source for FTP Plugin
+//
+
+// This file will be processed by the MIDL tool to
+// produce the type library (FTPPlugin.tlb) and marshalling code.
+
+import "oaidl.idl";
+import "ocidl.idl";
+
+[
+	object,
+	uuid(551844CA-B5A5-46CB-B28F-A979831ACA0C),
+	dual,
+	nonextensible,
+	helpstring("IIEFTPPlugin Interface"),
+	pointer_default(unique)
+]
+interface IIEFTPPlugin : IDispatch{
+};
+
+[
+	uuid(C11D7BDB-D9D0-45C4-BA83-A23DABDA242D),
+	version(1.0),
+	helpstring("FTPPlugin 1.0 Type Library")
+]
+library FTPPluginLib
+{
+	importlib("stdole2.tlb");
+	[
+		uuid(DF9A8ABF-A30C-4240-9BFE-E03E7EADC816),
+		helpstring("IEFTPPlugin Class")
+	]
+	coclass IEFTPPlugin
+	{
+		[default] interface IIEFTPPlugin;
+	};
+};
+
+[
+	object,
+	uuid("911E0834-CFC0-43b6-9AC5-FB4397D6EBD7"),
+	dual,	
+	nonextensible,
+	helpstring("IIEEventHandler Interface"),
+	pointer_default(unique)
+]
+interface IIEEventHandler : IDispatch
+{
+};

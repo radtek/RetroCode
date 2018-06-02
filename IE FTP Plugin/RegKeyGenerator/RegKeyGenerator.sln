@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "RegKeyGenerator", "RegKeyGenerator.vcproj", "{12DB0C7E-E82B-4BAC-9BAA-BB2D422EF9C8}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {EC3CDA32-2364-4308-B1A1-2D9C04DECF77}
+		SccProjectUniqueName1 = RegKeyGenerator.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{12DB0C7E-E82B-4BAC-9BAA-BB2D422EF9C8}.Debug.ActiveCfg = Debug|Win32
+		{12DB0C7E-E82B-4BAC-9BAA-BB2D422EF9C8}.Debug.Build.0 = Debug|Win32
+		{12DB0C7E-E82B-4BAC-9BAA-BB2D422EF9C8}.Release.ActiveCfg = Release|Win32
+		{12DB0C7E-E82B-4BAC-9BAA-BB2D422EF9C8}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

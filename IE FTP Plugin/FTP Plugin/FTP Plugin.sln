@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTP Plugin", "FTP Plugin\FTP Plugin.vcproj", "{9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FTP PluginPS", "FTP Plugin\FTP PluginPS.vcproj", "{FDAA7835-5988-41DB-A322-D46BC67ABDFD}"
+	ProjectSection(ProjectDependencies) = postProject
+		{9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1} = {9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1}
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1}.Debug|Win32.Build.0 = Debug|Win32
+		{9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1}.Release|Win32.ActiveCfg = Release|Win32
+		{9E8C24B5-E29E-45FA-BC66-DC3BDE829EF1}.Release|Win32.Build.0 = Release|Win32
+		{FDAA7835-5988-41DB-A322-D46BC67ABDFD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{FDAA7835-5988-41DB-A322-D46BC67ABDFD}.Release|Win32.ActiveCfg = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
