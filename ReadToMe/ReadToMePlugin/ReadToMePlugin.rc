@@ -1,0 +1,341 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "winres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""winres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,3
+ PRODUCTVERSION 1,0,0,3
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904e4"
+        BEGIN
+            VALUE "CompanyName", "Steve Foxover Software"
+            VALUE "FileDescription", "Read To Me"
+            VALUE "FileVersion", "1.0.0.3"
+            VALUE "InternalName", "ReadToMePlugin.dll"
+            VALUE "LegalCopyright", "(c) Steve Foxover Software  All rights reserved."
+            VALUE "OriginalFilename", "ReadToMePlugin.dll"
+            VALUE "ProductName", "Read To Me"
+            VALUE "ProductVersion", "1.0.0.3"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1252
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// REGISTRY
+//
+
+IDR_READTOMEPLUGIN      REGISTRY                "ReadToMePlugin.rgs"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_TOOLBAR1 TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_PLAY
+    BUTTON      ID_STOP
+    BUTTON      ID_PAUSE
+    SEPARATOR
+    BUTTON      ID_SETTINGS
+    BUTTON      ID_READTOME
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_TOOLBAR1            BITMAP                  "toolbar1.bmp"
+IDB_BITMAP_STOP         BITMAP                  "bitmapstop.bmp"
+IDB_BITMAP_PAUSE        BITMAP                  "bitmappause.bmp"
+IDB_BITMAP_SETTINGS     BITMAP                  "bitmapsettings.bmp"
+IDB_BITMAP_PLAY1        BITMAP                  "bitmap_p.bmp"
+IDB_BITMAP_PAUSE1       BITMAP                  "bmp00002.bmp"
+IDB_BITMAP_STOP1        BITMAP                  "bitmap_s.bmp"
+IDB_BITMAP_SETTINGS1    BITMAP                  "bmp00003.bmp"
+IDB_BITMAP_PLAY2        BITMAP                  "bmp00001.bmp"
+IDB_READTOMEDOWN        BITMAP                  "Readtomedown.bmp"
+IDB_READTOMEUP          BITMAP                  "Readtomeup.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_SETTINGSDLG DIALOGEX 0, 0, 288, 265
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Read To Me Settings"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    COMBOBOX        IDC_COMBO_VOICE,17,38,198,88,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "",IDC_SLIDER_VOICE_RATE,"msctls_trackbar32",TBS_AUTOTICKS | TBS_TOP | WS_TABSTOP,12,66,204,24
+    CONTROL         "",IDC_SLIDER_VOLUME,"msctls_trackbar32",TBS_TOP | WS_TABSTOP,12,102,204,24
+    CONTROL         "Underline spoken text",IDC_RADIO_UNDERLINE,"Button",BS_AUTORADIOBUTTON | WS_GROUP | WS_TABSTOP,18,134,85,10
+    CONTROL         "Select spoken text",IDC_RADIO_SELECT_TEXT,"Button",BS_AUTORADIOBUTTON,108,134,75,10
+    CONTROL         "Do not select text",IDC_RADIO_NO_SELECT_TEXT,"Button",BS_AUTORADIOBUTTON,186,134,71,10
+    EDITTEXT        IDC_EDIT_UNDERLINE_TEXT_COLOR,18,146,66,14,ES_AUTOHSCROLL
+    CONTROL         "Auto scroll selected text",IDC_CHECK_AUTO_SELECT,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,182,91,10
+    CONTROL         "Show button tool tips",IDC_CHECK_SHOW_TOOL_TIPS,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,200,82,10
+    CONTROL         "Speak on double left mouse click",IDC_CHECK_DCLICK_PLAY,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,218,121,10
+    DEFPUSHBUTTON   "OK",IDOK,175,243,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,229,243,50,16
+    LTEXT           "Select the voice you wish to use.",IDC_STATIC_PAGE1_1,17,26,105,8
+    LTEXT           "Voice speech rate.",IDC_STATIC_PAGE1_2,17,56,60,8
+    LTEXT           "Volume",IDC_STATIC_PAGE1_3,17,92,24,8
+    LTEXT           "Underlined text color",IDC_STATIC_PAGE1_4,18,164,66,8
+    CONTROL         "",IDC_TAB_SETTINGS,"SysTabControl32",0x0,6,6,276,228
+    LTEXT           "Characters to skip speaking (separate by comma's)",IDC_STATIC_WORDS_TO_SKIP,18,24,160,8
+    EDITTEXT        IDC_EDIT_CHARCTERS_TO_SKIP,18,36,252,42,ES_MULTILINE | ES_AUTOHSCROLL
+    LTEXT           "Words to skip speaking (separate by comma's)",IDC_STATIC_WORDS_SKIP_LABEL,18,90,147,8
+    EDITTEXT        IDC_EDIT_WORDS_TO_SKIP_SPEAKING,18,102,252,48,ES_MULTILINE | ES_AUTOHSCROLL
+    CONTROL         "Do not speak http hyperlinks",IDC_CHECK_DO_NOT_SPEAK_LINKS,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,18,162,106,10
+END
+
+IDD_ENTERREGCODE DIALOGEX 0, 0, 259, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ReadToMe"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_NAME,6,48,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_COMPANY,6,78,174,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_REG_CODE,6,108,174,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,202,7,50,16
+    PUSHBUTTON      "Cancel",IDCANCEL,202,26,50,16
+    LTEXT           "Enter your name",IDC_STATIC,6,36,52,8
+    LTEXT           "Enter your company name (optional)",IDC_STATIC,6,66,114,8
+    LTEXT           "Enter your registration code",IDC_STATIC,6,96,87,8
+    ICON            IDI_MAIN,IDC_STATIC,10,7,20,20,WS_BORDER
+    LTEXT           "Enter your registration details.",IDC_STATIC,43,12,93,8
+    GROUPBOX        "",IDC_STATIC,6,0,175,31
+END
+
+IDD_NAGDLG DIALOGEX 0, 0, 231, 77
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ReadToMe"
+FONT 10, "Arial", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "Enter registration number",IDC_BUTTON_ENTER_NUMBER,39,34,96,14
+    PUSHBUTTON      "Register",IDC_BUTTON_REGISTER,141,34,50,14
+    ICON            IDI_MAIN,IDC_STATIC,7,7,20,20,WS_BORDER
+    LTEXT           "Your free trial is up.",IDC_STATIC,85,6,66,8
+    LTEXT           "Please click register to license the software.",IDC_STATIC,42,18,147,8
+    LTEXT           "To uninstall, close all Internet Explorer Windows and select 'Uninstall' from the 'Start/Programs/ReadToMe' menu.",IDC_STATIC,13,52,204,18
+END
+
+IDD_ABOUTDLG DIALOGEX 0, 0, 269, 126
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION
+CAPTION "About ReadToMe"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,212,7,50,16
+    PUSHBUTTON      "Enter registration code",IDC_BUTTON_ENTER_CODE,36,102,96,14
+    PUSHBUTTON      "Order online",IDC_BUTTON_ORDER_ONLINE,138,102,54,14
+    ICON            IDI_MAIN,IDC_STATIC,7,7,20,20,WS_BORDER
+    LTEXT           "ReadToMe",IDC_STATIC_VERSION,42,12,156,8
+    LTEXT           "Copyright Steve Foxover 2008",IDC_STATIC,42,24,96,8
+    LTEXT           "Registered to:",IDC_STATIC,42,42,45,8
+    LTEXT           "",IDC_STATIC_REG_NAME,42,54,204,42
+END
+
+IDD_DCLICKPLAYMSGDIALOG DIALOGEX 0, 0, 258, 120
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "ReadToMe"
+FONT 11, "Times New Roman", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,197,97,50,13
+    CONTROL         "Don't show me this again.",IDC_CHECK_DONT_SHOW_AGAIN,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,6,96,97,10
+    ICON            IDI_MAIN,IDC_STATIC,229,7,16,15,WS_BORDER
+    CONTROL         "",IDC_STATIC,"Static",SS_BLACKFRAME,0,30,258,1
+    LTEXT           "- Instead of clicking the play button just double click with the left mouse button\r\n  on the first word you would like read.",IDC_STATIC,6,36,234,18
+    LTEXT           "- Wait for the page to completely load before double clicking the text.",IDC_STATIC,6,60,217,8
+    LTEXT           "- To skip paragraphs, just double click where you want to continue reading from.",IDC_STATIC,6,78,252,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_SETTINGSDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 281
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_ENTERREGCODE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 252
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_NAGDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 224
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 70
+    END
+
+    IDD_ABOUTDLG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 262
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 119
+    END
+
+    IDD_DCLICKPLAYMSGDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 251
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 113
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "Menu"
+    BEGIN
+        MENUITEM "Rewind sentence",             ID_MENU_REWIND
+        MENUITEM "Forward sentence",            ID_MENU_FORWARD
+        MENUITEM "Rewind paragraph",            ID_MENU_FASTREWIND
+        MENUITEM "Forward paragraph",           ID_MENU_FASTFORWARD
+        MENUITEM SEPARATOR
+        MENUITEM "Settings and options",        ID_MENU_SETTINGSANDOPTIONS
+        MENUITEM "About",                       ID_MENU_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_MAIN                ICON                    "icon1.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_PROJNAME            "ReadToMePlugin"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_PLAY                 "Speak text"
+    ID_STOP                 "Stop speech"
+    ID_PAUSE                "Pause speech"
+    ID_READTOME             "Menu options"
+    ID_SETTINGS             "ReadToMe settings"
+    ID_MENU_SETTINGSANDOPTIONS "Settings and options"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

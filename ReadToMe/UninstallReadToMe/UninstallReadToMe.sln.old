@@ -1,0 +1,30 @@
+Microsoft Visual Studio Solution File, Format Version 8.00
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UninstallReadToMe", "UninstallReadToMe.vcproj", "{100D8304-B439-43C5-8174-0BA3D1B608BE}"
+	ProjectSection(ProjectDependencies) = postProject
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SourceCodeControl) = preSolution
+		SccNumberOfProjects = 2
+		SccLocalPath0 = .
+		CanCheckoutShared = false
+		SolutionUniqueID = {C1CAB374-ECFB-4B18-B481-2724D006EAEE}
+		SccProjectUniqueName1 = UninstallReadToMe.vcproj
+		SccLocalPath1 = .
+		CanCheckoutShared = false
+	EndGlobalSection
+	GlobalSection(SolutionConfiguration) = preSolution
+		Debug = Debug
+		Release = Release
+	EndGlobalSection
+	GlobalSection(ProjectConfiguration) = postSolution
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Debug.ActiveCfg = Debug|Win32
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Debug.Build.0 = Debug|Win32
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Release.ActiveCfg = Release|Win32
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Release.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+	EndGlobalSection
+	GlobalSection(ExtensibilityAddIns) = postSolution
+	EndGlobalSection
+EndGlobal

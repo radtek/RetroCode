@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="UninstallReadToMe">
+</Property><Property Name="Solution File" Value="C:\AppDev\Steve Foxover Software\Speech\UninstallReadToMe\UninstallReadToMe.sln">
+</Property><Property Name="Date" Value="Thursday, January 10, 2008">
+</Property><Property Name="Time" Value="17:11:49 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="2" Project="UninstallReadToMe" Source="UninstallReadToMe.vcproj" Description="The project file 'C:\AppDev\Steve Foxover Software\Speech\UninstallReadToMe\UninstallReadToMe.vcproj' cannot be updated to this Visual Studio 2008 version format because it is read-only on disk. Please set the permissions on the project file and re-open it to migrate the project.">
+</Event></UpgradeLog>

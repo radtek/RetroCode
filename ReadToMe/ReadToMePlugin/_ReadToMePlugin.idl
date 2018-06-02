@@ -1,0 +1,89 @@
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\prsht.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\mshtml.idl";
+import "c:\program files\microsoft sdks\windows\v6.0a\include\dimm.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\mshtmhst.idl";
+import "c:\program files\microsoft sdks\windows\v6.0a\include\docobj.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\exdisp.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\objsafe.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\shldisp.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\shobjidl.idl";
+import "c:\program files\microsoft sdks\windows\v6.0a\include\prsht.idl";
+import "c:\program files\microsoft sdks\windows\v6.0a\include\propsys.idl";
+import "c:\program files\microsoft sdks\windows\v6.0a\include\structuredquery.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\sapi.idl";
+import "C:\Program Files\Microsoft SDKs\Windows\v6.0A\include\sapiddk.idl";
+
+[
+	object,
+	uuid(6A7C0940-D1F2-4343-ABB9-58AB669E9E4F),
+	dual,
+	helpstring("IReadToMe Interface"),
+	pointer_default(unique)
+] 
+#line 19 "c:\\appdev\\steve foxover software\\speech\\readtomeplugin\\readtome.h"
+interface IReadToMe : IDispatch {
+};
+
+[
+	object,
+	uuid(D0F58ABF-0B8E-4888-B97F-27FA76FF7E44),
+	dual,
+	helpstring("IHtmlEvenHandler Interface"),
+	pointer_default(unique)
+] 
+#line 15 "c:\\appdev\\steve foxover software\\speech\\readtomeplugin\\htmlevenhandler.h"
+interface IHtmlEvenHandler : IDispatch {
+};
+
+[
+	object,
+	uuid(F06319D4-C694-4E50-8AEB-45CDACDA37A4),
+	dual,
+	helpstring("IMyBrowserEvents Interface"),
+	pointer_default(unique)
+] 
+#line 14 "c:\\appdev\\steve foxover software\\speech\\readtomeplugin\\mybrowserevents.h"
+interface IMyBrowserEvents : IDispatch {
+};
+
+
+[ version(1.0), uuid(9BA94845-6AAB-4BBB-9E0F-3BE22B8C1AFB), helpstring("ReadToMePlugin 1.0 Type Library") ]
+library ReadToMePlugin
+{
+	importlib("stdole2.tlb");
+	importlib("olepro32.dll");
+
+	[
+		aggregatable,
+		version(1.0),
+		uuid(1FFFE263-3C8E-4DD8-9BAA-36998D29561E),
+		helpstring("ReadToMe Class")
+	] 
+#line 34 "c:\\appdev\\steve foxover software\\speech\\readtomeplugin\\readtome.h"
+	coclass CReadToMe {
+		interface IReadToMe;
+	};
+
+	[
+		aggregatable,
+		version(1.0),
+		uuid(E6A7F2CD-F0DF-4C78-87E9-60516BCF6AFA),
+		helpstring("HtmlEvenHandler Class")
+	] 
+#line 32 "c:\\appdev\\steve foxover software\\speech\\readtomeplugin\\htmlevenhandler.h"
+	coclass CHtmlEvenHandler {
+		interface IHtmlEvenHandler;
+	};
+
+	[
+		version(1.0),
+		uuid(51A96B6A-8D5E-4BA3-953C-4FE6EEC0EF65),
+		helpstring("MyBrowserEvents Class")
+	] 
+#line 31 "c:\\appdev\\steve foxover software\\speech\\readtomeplugin\\mybrowserevents.h"
+	coclass CMyBrowserEvents {
+		interface IMyBrowserEvents;
+	};
+
+}
+

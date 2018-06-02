@@ -1,0 +1,53 @@
+HKCR
+{
+	ReadToMePlugin.ReadToMe.1 = s 'ReadToMe'
+	{
+		CLSID = s '{1FFFE263-3C8E-4DD8-9BAA-36998D29561E}'
+	}
+	ReadToMePlugin.ReadToMe = s 'ReadToMe'
+	{
+		CLSID = s '{1FFFE263-3C8E-4DD8-9BAA-36998D29561E}'
+		CurVer = s 'ReadToMePlugin.ReadToMe.1'
+	}
+	NoRemove CLSID
+	{
+		ForceRemove {1FFFE263-3C8E-4DD8-9BAA-36998D29561E} = s 'ReadToMe'
+		{
+			ProgID = s 'ReadToMePlugin.ReadToMe.1'
+			VersionIndependentProgID = s 'ReadToMePlugin.ReadToMe'
+			ForceRemove 'Programmable'
+			InprocServer32 = s '%MODULE%'
+			{
+				val ThreadingModel = s 'Apartment'
+			}
+			'TypeLib' = s '{1FFFE263-3C8E-4DD8-9BAA-36998D29561E}'
+		}
+	}	
+	NoRemove AppID
+	{
+		'%APPID%' = s 'ReadToMePlugin'
+		'ReadToMePlugin.DLL'
+		{
+			val AppID = s '%APPID%'
+		}
+	}	
+}
+
+HKLM
+{
+	NoRemove Software
+	{
+		NoRemove Microsoft
+		{
+			NoRemove 'Internet Explorer'
+			{
+				NoRemove Toolbar
+				{
+					val '{1FFFE263-3C8E-4DD8-9BAA-36998D29561E}' = s 'ReadToMe'
+				}
+			}
+		}
+	}
+}
+
+

@@ -1,0 +1,19 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UninstallReadToMe", "UninstallReadToMe.vcproj", "{100D8304-B439-43C5-8174-0BA3D1B608BE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Default = Debug|Default
+		Release|Default = Release|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Debug|Default.ActiveCfg = Debug|Win32
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Debug|Default.Build.0 = Debug|Win32
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Release|Default.ActiveCfg = Release|Win32
+		{100D8304-B439-43C5-8174-0BA3D1B608BE}.Release|Default.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
